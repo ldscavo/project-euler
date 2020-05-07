@@ -2,7 +2,7 @@
   (= (mod i n) 0))
 
 (reduce
- (fn [sum, i]
+ (fn [sum i]
    (if (or (multiple-of-n 5 i) (multiple-of-n 3 i))
      (+ sum i)
      sum))
